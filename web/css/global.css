@@ -1,0 +1,11 @@
+.image {
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.cadre {
+    border: 2px orange ridge;
+}
