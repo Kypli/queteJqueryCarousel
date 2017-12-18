@@ -14,18 +14,11 @@ $('.container').on('click', '.image', function (e) {
     }
     console.log(nextNumber);
 
-    $("#" + number).hide();
-    $("#" + nextNumber).show();
+    $("#" + number).hide(1500);
+    $("#" + nextNumber).show(1500);
 });
 
 // Défiler les images toutes seules
-function defile()
-{
-
-
-    clearInterval(timer);
-
-
-}
-
-var timer = setInterval('defile()',3000);
+setInterval(function() {
+    $('.image:visible').trigger('click');
+}, 3000);
